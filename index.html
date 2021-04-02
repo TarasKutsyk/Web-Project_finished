@@ -1,14 +1,203 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="bundle.css">
+    <script src="https://kit.fontawesome.com/a43f13d2d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<button class="foo-button mdc-button">
-    <div class="mdc-button__ripple"></div>
-    <span class="mdc-button__label">Button</span>
-</button>
+<div class="mdc-tab-bar" role="tablist">
+    <div class="mdc-tab-scroller">
+        <hr class="top">
+        <div class="mdc-tab-scroller__scroll-area">
+            <div class="mdc-tab-scroller__scroll-content">
+                <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+          <span class="mdc-tab__content">
+            <span class="mdc-tab__text-label">Dashboard</span>
+            <span class="mdc-tab__icon material-icons" aria-hidden="true">dashboard</span>
+          </span>
+                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+                    <span class="mdc-tab__ripple"></span>
+                </button>
+
+                <button class="mdc-tab" role="tab" aria-selected="true" tabindex="1">
+          <span class="mdc-tab__content">
+            <span class="mdc-tab__text-label">Settings</span>
+            <span class="mdc-tab__icon material-icons" aria-hidden="true">settings</span>
+          </span>
+                    <span class="mdc-tab-indicator">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+                    <span class="mdc-tab__ripple"></span>
+                </button>
+
+                <button class="mdc-tab" role="tab" aria-selected="true" tabindex="2">
+          <span class="mdc-tab__content">
+            <span class="mdc-tab__text-label">Calendar</span>
+            <span class="mdc-tab__icon material-icons" aria-hidden="true">calendar_today</span>
+          </span>
+                    <span class="mdc-tab-indicator">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+                    <span class="mdc-tab__ripple"></span>
+                </button>
+
+                <button class="mdc-tab" role="tab" aria-selected="true" tabindex="3">
+          <span class="mdc-tab__content">
+            <span class="mdc-tab__text-label">Message</span>
+            <span class="mdc-tab__icon material-icons" aria-hidden="true">message</span>
+          </span>
+                    <span class="mdc-tab-indicator">
+            <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+          </span>
+                    <span class="mdc-tab__ripple"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="first-content-row">
+    <div class="image-list-wrapper">
+        <div class="image-list-menu">
+            <aside class="mdc-drawer side-menu">
+                <div class="mdc-drawer__content">
+                    <nav class="mdc-list">
+                        <a class="mdc-list-item" href="#" aria-current="page">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">circle_notifications</i>
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">person_add</i>
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">favorite</i>
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">map</i>
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">explore</i>
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">schedule</i>
+                        </a>
+                        <a class="mdc-list-item" href="#">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">location_on</i>
+                        </a>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+        <div class="image-list">
+            <ul class="mdc-image-list my-image-list">
+                <li class="mdc-image-list__item">
+                    <div class="mdc-image-list__image-aspect-container">
+                        <img class="mdc-image-list__image" src="img/imgListItem1.jpg">
+                    </div>
+                </li>
+                <li class="mdc-image-list__item">
+                    <div class="mdc-image-list__image-aspect-container">
+                        <img class="mdc-image-list__image" src="img/imgListItem2.jpg">
+                    </div>
+                </li>
+                <li class="mdc-image-list__item">
+                    <div class="mdc-image-list__image-aspect-container">
+                        <img class="mdc-image-list__image" src="img/imgListItem3.jpg">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="chart-wrapper">
+        <div class="percent">
+            <svg>
+                <circle class="circle-bg"  cx = "60" cy="60" r="60"></circle>
+                <circle class="circle-1" cx = "60" cy="60" r="60"></circle>
+            </svg>
+            <div class="per-number">
+                <h2>60<span>%</span></h2>
+            </div>
+        </div>
+        <canvas id="myChart" width="400" height="200"></canvas>
+    </div>
+    <div class="login-wrapper">
+        <div class="mdc-slider">
+            <p class="loading-text">Loading...</p>
+            <input class="mdc-slider__input" type="range" min="0" max="100" value="50" name="volume" aria-label="Continuous slider demo">
+            <div class="mdc-slider__track">
+                <div class="mdc-slider__track--inactive"></div>
+                <div class="mdc-slider__track--active">
+                    <div class="mdc-slider__track--active_fill"></div>
+                </div>
+            </div>
+            <div class="mdc-slider__thumb">
+                <div class="mdc-slider__thumb-knob"></div>
+            </div>
+        </div>
+        <div class="links-bar">
+            <aside class="mdc-drawer full-width">
+                <div class="mdc-drawer__content">
+                    <nav class="mdc-list links-bar-row">
+                        <a class="mdc-list-item" href="https://www.facebook.com/">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="fab fa-facebook"></i>                        </a>
+                        <a class="mdc-list-item" href="https://www.google.com/">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a class="mdc-list-item" href="https://www.twitter.com/">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="fab fa-twitter"></i>
+                        </a><a class="mdc-list-item" href="https://www.telegram.org/">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a class="mdc-list-item" href="https://www.gmail.com/">
+                            <span class="mdc-list-item__ripple"></span>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+        <div class="login-form-wrapper">
+            <h2>Sign in to your account</h2>
+            <label class="mdc-text-field mdc-text-field--filled">
+                <span class="mdc-text-field__ripple"></span>
+                <span class="mdc-floating-label" id="input-username">Username</span>
+                <input class="mdc-text-field__input" type="text" aria-labelledby="xxx">
+                <span class="mdc-line-ripple"></span>
+            </label>
+            <label class="mdc-text-field mdc-text-field--filled">
+                <span class="mdc-text-field__ripple"></span>
+                <span class="mdc-floating-label" id="input-password">Password</span>
+                <input class="mdc-text-field__input" type="text" aria-labelledby="yyy">
+                <span class="mdc-line-ripple"></span>
+            </label>
+            <div>
+                <button class="mdc-button mdc-button--touch">
+                    <span class="mdc-button__ripple"></span>
+                    <span class="mdc-button__label">Sign in</span>
+                    <span class="mdc-button__touch"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="bundle.js" async></script>
 </body>

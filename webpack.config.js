@@ -1,7 +1,7 @@
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
-    entry: ['./app/app.scss', './app/app.js'],
+    entry: ['babel-polyfill', './app/app.scss', './app/app.js'],
     output: {
         filename: 'bundle.js',
     },
@@ -50,7 +50,12 @@ module.exports = {
                 options: {
                     presets: ['@babel/preset-env'],
                 },
-            }
+            },
+            {
+                test: /\.html$/,
+                loader: "raw-loader"
+            },
+            { test: /\.jsx?$/, loader: 'babel-loader' }
         ],
     },
 };

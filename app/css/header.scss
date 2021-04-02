@@ -1,0 +1,14 @@
+@use "node_modules/@material/tab-bar/mdc-tab-bar";
+@use "node_modules/@material/tab-scroller/mdc-tab-scroller";
+@use "node_modules/@material/tab-indicator/mdc-tab-indicator";
+@use "node_modules/@material/tab/mdc-tab";
+
+.top {
+  margin: 0;
+  padding: 0;
+  border-top: 3px solid orange;
+}
+
+.mdc-tab-scroller__scroll-content {
+  background-color: white;
+}

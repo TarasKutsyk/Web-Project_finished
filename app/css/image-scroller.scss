@@ -1,0 +1,54 @@
+@use "node_modules/@material/image-list/mdc-image-list";
+@use "node_modules/@material/image-list";
+@use "node_modules/@material/drawer";
+@use "node_modules/@material/list";
+
+@include drawer.core-styles;
+@include drawer.dismissible-core-styles;
+@include drawer.modal-core-styles;
+@include list.core-styles;
+
+.my-image-list {
+  max-width: 400px;
+  @include image-list.standard-columns(1);
+  @include image-list.aspect(3);
+}
+
+.first-content-row {
+  margin: 10px 0;
+  height: 60vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 800px) {
+  .first-content-row {
+    flex-flow: column nowrap;
+  }
+}
+
+.image-list-wrapper {
+  width: 30%;
+  display: none;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 5px;
+}
+
+.image-list {
+  flex-grow: 4;
+  height: 100px;
+  width: 300px;
+}
+
+.mdc-drawer {
+  @include drawer.width(60px);
+  height: auto;
+}
+
+.mdc-drawer__content {
+  background-color: #fcf8c3;
+}
+

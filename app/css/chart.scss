@@ -1,0 +1,37 @@
+.chart-wrapper {
+  background-color: white;
+}
+
+.percent {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 50px;
+  svg {
+    margin-left: 25%;
+    stroke-dasharray: 440;
+    stroke-linecap: round;
+
+    .circle-bg {
+      fill: none;
+      stroke-width: 10;
+      stroke: #f3f3f3;
+      stroke-dashoffset: 0;
+      transform: translate(5px, 5px)
+    }
+
+    .circle-1 {
+      fill: none;
+      stroke-width: 10;
+      stroke: #ffb767;
+      stroke-dashoffset: calc(440 - (440 * 60) / 100);
+      transform: translate(5px, 5px)
+    }
+  }
+}
+
+.per-number h2 {
+  color: #ff9900;
+  text-align: center;
+  margin: 0;
+}

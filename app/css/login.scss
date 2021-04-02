@@ -1,0 +1,52 @@
+@use "node_modules/@material/slider";
+@use "node_modules/@material/slider/styles";
+
+@use "node_modules/@material/floating-label/mdc-floating-label";
+@use "node_modules/@material/line-ripple/mdc-line-ripple";
+@use "node_modules/@material/notched-outline/mdc-notched-outline";
+@use "node_modules/@material/textfield";
+
+@use 'node_modules/@material/button/mdc-button';
+@use 'node_modules/@material/button';
+
+@include textfield.core-styles;
+
+.mdc-text-field {
+}
+
+.login-wrapper {
+  flex-basis: 25%;
+}
+
+.mdc-slider {
+  @include slider.track-active-color(orange);
+}
+
+.mdc-slider__thumb-knob {
+  display: none;
+}
+
+.mdc-drawer .mdc-list-item:nth-child(1) {
+  margin-top: 7px;
+}
+
+.loading-text {
+  font-family: "Calibri Light";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.links-bar-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-wrapper {
+  padding: 10px;
+  background-color: white;
+}

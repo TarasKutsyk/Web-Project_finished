@@ -1,6 +1,15 @@
-@use '../node_modules/@material/button/mdc-button';
-@use '../node_modules/@material/button';
+@use "node_modules/@material/theme" with (
+  $primary: #ff9900,
+  $secondary: #feeae6,
+  $on-primary: #442b2d,
+  $on-secondary: #442b2d,
+);
 
-.foo-button {
-  @include button.container-fill-color(darksalmon);
+@use "css/header";
+@use "css/image-scroller";
+@use "css/chart";
+@use "css/login";
+
+body {
+  background-color: #e9eef2;
 }
