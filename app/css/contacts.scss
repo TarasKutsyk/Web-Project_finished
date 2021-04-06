@@ -2,10 +2,21 @@
 @use "node_modules/@material/icon-button"; // Required only for data table with column sorting.
 @use "node_modules/@material/data-table/data-table";
 
+@use 'node_modules/@material/button/mdc-button';
+@use 'node_modules/@material/button';
+
 @include checkbox.core-styles;
 @include icon-button.core-styles;
 @include data-table.core-styles;
 @include data-table.theme-baseline;
+
+.delete-contact-btn {
+  @include button.container-fill-color(#fc4141);
+}
+
+.mdc-data-table {
+  @include data-table.theme-baseline()
+}
 
 .second-content-section {
   min-height: 60vh;
@@ -14,8 +25,8 @@
   flex-flow: row nowrap;
 }
 
-.contacts-wrapper {
-
+.contacts-table {
+  text-align: center;
 }
 
 .contacts-form {
