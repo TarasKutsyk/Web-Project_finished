@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@material/button": "^10.0.0",
+    "@material/data-table": "^10.0.0",
     "@material/image-list": "^10.0.0",
     "@material/ripple": "^10.0.0",
     "@material/slider": "^10.0.0",

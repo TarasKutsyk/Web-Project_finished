@@ -8,4 +8,5 @@ require('./js/image-scroller');
 require('./js/slider');
 require('./js/chart');
 require('./js/login');
+require('./js/contacts');
 

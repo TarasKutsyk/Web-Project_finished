@@ -14,17 +14,16 @@
   @include image-list.aspect(3);
 }
 
-.first-content-row {
+.first-content-section {
   margin: 10px 0;
-  height: 60vh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
 
 @media all and (max-width: 800px) {
-  .first-content-row {
-    flex-flow: column nowrap;
+  .first-content-section {
+    flex-flow: row wrap;
   }
 }
 
@@ -32,14 +31,16 @@
   width: 30%;
   display: none;
   flex-flow: row nowrap;
+  flex-basis: 25%;
   justify-content: space-between;
   background-color: white;
   padding: 10px 5px;
+  box-sizing: border-box;
 }
 
 .image-list {
   flex-grow: 4;
-  height: 100px;
+  height: 100%;
   width: 300px;
 }
 

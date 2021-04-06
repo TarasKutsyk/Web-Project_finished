@@ -1,0 +1,38 @@
+@use "node_modules/@material/checkbox"; // Required only for data table with row selection.
+@use "node_modules/@material/icon-button"; // Required only for data table with column sorting.
+@use "node_modules/@material/data-table/data-table";
+
+@include checkbox.core-styles;
+@include icon-button.core-styles;
+@include data-table.core-styles;
+@include data-table.theme-baseline;
+
+.second-content-section {
+  min-height: 60vh;
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.contacts-wrapper {
+
+}
+
+.contacts-form {
+  height: 50%;
+  background-color: white;
+}
+
+.contacts-wrapper {
+  flex-basis: 25%;
+  height: 50%;
+  background-color: white;
+}
+
+.add-contact-wrapper {
+  text-align: center;
+}
+
+.contact-input {
+  width: 100%;
+}
