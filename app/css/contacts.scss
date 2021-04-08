@@ -11,6 +11,7 @@
 @include data-table.theme-baseline;
 
 .delete-contact-btn {
+  padding-top: 5px;
   @include button.container-fill-color(#fc4141);
 }
 
@@ -25,7 +26,12 @@
   flex-flow: row nowrap;
 }
 
+.deleteIcon {
+  margin: auto;
+}
+
 .contacts-table {
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -37,7 +43,6 @@
 .contacts-wrapper {
   flex-basis: 25%;
   height: 50%;
-  background-color: white;
 }
 
 .add-contact-wrapper {

@@ -3,7 +3,7 @@ import User from './class/User';
 
 const myTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
 
-const idGenerator = (function() {
+const idGenerator = (function () {
     let privateCounter = 0;
 
     return {
@@ -47,11 +47,15 @@ function formNewContact(name, surname) {
     const deleteBtnWrapper = document.createElement('td');
     const deleteBtn = document.createElement('button');
     deleteBtn.className = 'mdc-button mdc-button--touch0 delete-contact-btn';
-    deleteBtn.innerHTML = '<span class="mdc-button__ripple"></span>\n' +
-        '                            <span class="mdc-button__label">\n' +
-        '                                <i class="material-icons mdc-list-item__graphic" aria-hidden="true">remove</i>\n' +
-        '                            </span>\n' +
-        '                            <span class="mdc-button__touch"></span>';
+    deleteBtn.innerHTML =
+        '<span class="mdc-button__ripple"></span>\n' +
+'                            <span class="mdc-button__label">\n' +
+'                                <i class="material-icons mdc-list-item__graphic deleteIcon" aria-hidden="true">remove</i>\n' +
+'                            </span>\n' +
+'                            <span class="mdc-button__touch"></span>';
+    deleteBtn.onclick = () => {
+        rowElement.remove();
+    }
 
     deleteBtnWrapper.appendChild(deleteBtn);
 
