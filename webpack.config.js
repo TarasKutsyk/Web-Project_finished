@@ -1,4 +1,5 @@
 const autoprefixer = require('autoprefixer');
+const path = require('path');
 
 module.exports = {
     entry: ['babel-polyfill', './app/app.scss', './app/app.js'],
@@ -55,7 +56,27 @@ module.exports = {
                 test: /\.html$/,
                 loader: "raw-loader"
             },
-            { test: /\.jsx?$/, loader: 'babel-loader' }
+            { test: /\.jsx?$/, loader: 'babel-loader' },
+            {
+                test: /\.(jpg|png|svg)$/,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 25000,
+                        name: '[path][name].[ext]',
+                        context: path.resolve(__dirname, "img/"),
+                        outputPath: 'dist/',
+                        publicPath: '../',
+                        useRelativePaths: true
+                    }
+                }
+            }
+        ],
+    },
+    resolve: {
+        modules: [
+            path.join(__dirname, 'img'),
+            "node_modules"
         ],
     },
 };

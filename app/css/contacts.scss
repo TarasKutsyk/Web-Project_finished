@@ -20,10 +20,10 @@
 }
 
 .second-content-section {
-  min-height: 60vh;
   margin: 10px 0;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .deleteIcon {

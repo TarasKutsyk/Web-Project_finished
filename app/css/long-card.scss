@@ -1,0 +1,28 @@
+@use "node_modules/@material/card";
+
+@include card.core-styles;
+
+
+
+.long-card-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.long-card {
+  flex-basis: 64%;
+}
+
+.mdc-card__primary-action {
+  flex-basis: 40%;
+}
+
+.long-card-text {
+  flex-basis: 60%;
+  font-family: "Calibri Light";
+}
+
+.long-card-text > h2 {
+  text-align: center;
+}

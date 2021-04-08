@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@material/button": "^10.0.0",
+    "@material/card": "^10.0.0",
     "@material/data-table": "^10.0.0",
     "@material/image-list": "^10.0.0",
     "@material/ripple": "^10.0.0",
@@ -23,7 +24,8 @@
     "chart.js": "^2.9.4",
     "glob": "^7.1.6",
     "material-components-web": "^10.0.0",
-    "raw-loader": "^4.0.2"
+    "raw-loader": "^4.0.2",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
