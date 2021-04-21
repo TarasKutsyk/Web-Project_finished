@@ -6,82 +6,84 @@
   align-items: center;
 }
 
+.month-header {
+  color: orange;
+}
+
 .calendar {
-  width: 45rem;
-  height: 52rem;
-  background-color: #222227;
+  font-family: "Calibri Light";
+  color: black;
+  width: 22.5rem;
+  background-color: white;
   box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
 }
 
 .month {
-  height: 2rem;
-  background-color: #167e56;
+  height: 1.5rem;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1rem;
   text-align: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .month i {
-  font-size: 1rem;
+  font-size: 0.5rem;
   cursor: pointer;
 }
 
 .month h1 {
-  font-size: 3rem;
+  font-size: 0.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
 }
 
 .month p {
-  font-size: 1.6rem;
+  font-size: 0.8rem;
 }
 
 .weekdays {
   width: 100%;
-  height: 5rem;
-  padding: 0 0.4rem;
+  height: 2.5rem;
+  padding: 0 0.2rem;
   display: flex;
   align-items: center;
 }
 
 .weekdays div {
-  font-size: 1.5rem;
+  font-size: 0.75rem;
   font-weight: 400;
-  letter-spacing: 0.1rem;
-  width: calc(44.2rem / 7);
+  letter-spacing: 0.05rem;
+  width: calc(22.1rem / 7);
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .days {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0.2rem;
+  padding: 0.1rem;
 }
 
 .days div {
-  font-size: 1.4rem;
-  margin: 0.3rem;
-  width: calc(40.2rem / 7);
-  height: 5rem;
+  font-size: 0.7rem;
+  margin: 0.15rem;
+  width: calc(20.1rem / 7);
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   transition: background-color 0.2s;
 }
 
 .days div:hover:not(.today) {
-  background-color: #262626;
-  border: 0.2rem solid #777;
+  background-color: #ffb35c;
+  border: 0.1rem solid #777;
   cursor: pointer;
 }
 
@@ -91,5 +93,5 @@
 }
 
 .today {
-  background-color: #167e56;
+  background-color: #ff6a00;
 }

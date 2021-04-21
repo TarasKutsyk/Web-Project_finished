@@ -22,8 +22,14 @@
 .second-content-section {
   margin: 10px 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
+}
+
+@media all and (max-width: 800px) {
+  .second-content-section {
+    flex-flow: row wrap;
+  }
 }
 
 .deleteIcon {

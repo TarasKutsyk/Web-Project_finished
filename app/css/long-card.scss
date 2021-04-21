@@ -10,15 +10,19 @@
   justify-content: space-between;
 }
 
-.long-card {
+.secondPart {
   flex-basis: 64%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .mdc-card__primary-action {
-  flex-basis: 40%;
+  flex-basis: 43.5%;
 }
 
 .long-card-text {
+  padding: 5px;
   flex-basis: 60%;
   font-family: "Calibri Light";
 }
