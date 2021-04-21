@@ -1,5 +1,4 @@
 import {MDCDataTable} from '@material/data-table';
-import User from './class/User';
 
 const myTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
 
