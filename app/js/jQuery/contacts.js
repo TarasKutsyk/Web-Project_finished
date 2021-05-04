@@ -21,6 +21,14 @@ $(function () {
 
     const form = document.contactForm;
 
+    $.get("app/data.json", function(data){
+        for (const contact of data) {
+            const newContact = formNewContact(contact.name, contact.surname);
+
+            $('#contactsBody').append(newContact);
+        }
+    });
+
     $('#add-contact-btn').click((ev) => {
         ev.preventDefault();
 
@@ -28,8 +36,7 @@ $(function () {
         const newContact = formNewContact(name.value, surname.value);
 
         $('#contactsBody').append(newContact);
-    })
-
+    });
 
     function formNewContact(name, surname) {
         const newRow = $('<tr></tr>')

@@ -22,8 +22,10 @@
     "@material/textfield": "^10.0.0",
     "@material/theme": "^10.0.0",
     "chart.js": "^2.9.4",
+    "express": "^4.17.1",
     "glob": "^7.1.6",
     "material-components-web": "^10.0.0",
+    "path": "^0.12.7",
     "raw-loader": "^4.0.2",
     "url-loader": "^4.1.1"
   },
